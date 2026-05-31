@@ -1,0 +1,52 @@
+name: bali_urip_transport
+description: Aplikasi Bali Private Tour Guide — jasa private driver dan tour guide di Bali.
+publish_to: 'none'
+version: 1.0.0+1
+
+
+environment:
+  sdk: ^3.11.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # UI
+  cupertino_icons: ^1.0.8
+  
+  # Fitur
+  url_launcher: ^6.2.5  # Tombol WhatsApp booking
+  intl: ^0.19.0         # Format tanggal di booking form
+
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  device_frame: ^1.4.0
+  video_player: ^2.11.1 #INI BUAT VIDEO
+  sqflite: ^2.4.2+1
+  sqflite_common_ffi: ^2.3.4+4
+  path: ^1.9.1
+  image_picker: ^1.2.2
+  
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logoapk_1.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/destinations/spiritual/
+    - assets/images/destinations/alam/
+    - assets/images/destinations/pantai/
+    - assets/images/destinations/budaya/
+    - assets/images/destinations/adventure/
+    - assets/images/destinations/island/
+    - assets/images/  # foto luar
+    - assets/videos/  # vidio
